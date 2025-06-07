@@ -1,0 +1,38 @@
+/* type & layout */
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500&family=Lato:wght@300;400&display=swap');
+:root{
+    --bg-dark:rgba(0,0,0,.55);
+    --uw-gold:#e8d3a2;
+}
+*{box-sizing:border-box;padding:0;margin:0}
+body{
+    font-family:"Lato",sans-serif;
+    color:#f5f5f5;
+    background:#1a1a1a;
+    line-height:1.6;
+}
+header{
+    position:relative;
+    background:url("https://source.unsplash.com/1600x400/?uw,seattle") center/cover no-repeat;
+    height:240px;
+}
+#shade{position:absolute;inset:0;background:var(--bg-dark);}
+nav{
+    position:absolute;bottom:10px;left:50%;transform:translateX(-50%);
+    display:flex;gap:3rem;
+    font-family:"Playfair Display",serif;font-size:1.15rem;
+}
+nav a{
+    text-decoration:none;color:#fff;position:relative;padding-bottom:.25rem;
+}
+nav a::after{
+    content:"";position:absolute;left:0;bottom:0;height:2px;width:0;
+    background:var(--uw-gold);transition:width .25s;
+}
+nav a:hover::after{width:100%}
+/* page body */
+main{max-width:900px;margin:3rem auto;padding:0 1rem}
+h1,h2{font-family:"Playfair Display",serif;color:var(--uw-gold)}
+figure{margin:2rem 0;text-align:center}
+figure img{max-width:100%;height:auto;border-radius:4px}
+caption{font-size:.9rem;color:#ccc}
