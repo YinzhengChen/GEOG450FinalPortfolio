@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title><!-- unique title --></title>
+<link rel="stylesheet" href="assets/style.css">
+</head>
+<body>
+<header>
+  <div id="shade"></div>
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="dear_data.html">Dear Data</a>
+    <a href="welcome_to_seattle.html">Welcome to Seattle</a>
+    <a href="whats_happening_in_the_town.html">What's Happening in the Town</a>
+    <a href="gray_anatomy.html">Gray Anatomy</a>
+    <a href="happy_places.html">Happy Places</a>
+  </nav>
+</header>
+    
+    <main>
+    <h1>Tracing Migration Flows to Seattle: Understanding a Growing City</h1>
+    
+    <p>Seattle’s reputation begins with drizzle, yet the city’s palette is far richer. One of the clearest proofs sits at the heart of campus: the University of Washington’s Quad, where Yoshino cherry trees bloom pink each spring before ceding the stage to a vivid summer canopy. By photographing the Quad every afternoon from May 13 to May 17 and distilling each image to its ten most common colors, I set out to test a hunch—after blossom season, green would dominate even Seattle’s “rainwashed” afternoons.<p>
+    <figure>
+      <img src="assets/img/seattle-sankey.png" alt="Sankey diagram of migration flows"><!-- TODO -->
+      <figcaption>Sankey diagram of inbound migration to the Seattle&ndash;Tacoma&ndash;Bellevue metro area, 2016&ndash;2020.</figcaption>
+    </figure>
+    
+    <p>The data for this project came from the U.S. Census Bureau's 2016-2020 metro-to-metro migration tables. To prepare the dataset, we filtered only the inbound flows to Seattle-Tacoma-Bellevue and aggregated the total number of migrants from each region. We chose a Sankey diagram because it clearly communicates direction, quantity, and origin in one glance. Compared to a bar chart or map, a Sankey diagram helps the viewer understand both the diversity and scale of Seattle's inbound migration in a single visual. The visual variables we applied included line thickness for flow volume, and contrasting colors to distinguish metro regions (gray) from international regions (yellow and green), while Seattle itself is represented by the black endpoint node.<p>
+    <p>This visualization connects closely to Seattle's broader characteristics as a city shaped by mobility, economic opportunity, and international influence. As one article from Axios put it, "Seattle metro grows faster than U.S., driven by foreign immigration" (2025). While we cannot directly confirm the causal factors behind these migration patterns through this dataset alone, our visualization supports the broader narrative that Seattle continues to attract newcomers from both coasts and around the world. Especially telling is the large migration from Asia—outpacing even the largest single domestic source regions. This underlines Seattle's growing role as a Pacific gateway city with increasingly global ties.<p>
+    <p>Throughout this project, I contributed by analyzing and helping build the Sankey diagram using Python and a cleaned CSV version of the Census data. At first, I found it difficult to determine which data columns to isolate, but collaborating with my group helped clarify the dataset structure. Seeing how we transformed raw data into a compelling story helped me appreciate the role of data visualization in geographic storytelling.<p>
+    <p>One strength of our project was the coordination and flexibility in dividing tasks. We split the project by different visualization directions and combined insights to decide which one conveyed the clearest message. The Sankey diagram stood out because it immediately demonstrated where most people came from and gave structure to our narrative. If I were to improve the project further, I would explore adding time-based animations or disaggregating flows by year to better show temporal changes.<p>
+    <p>This assignment also made me think more deeply about how Seattle is not just a physical location but also a node in a much larger network of migration, shaped by housing, job opportunities, and global movement. Next time, I hope to push the technical side further by incorporating interactive elements into the infographic to enhance user engagement.<p>
+    <h2>References</h2>
+    <ul>
+      <li>U.S. Census Bureau. 2021. Metro-to-Metro Migration Flows, 2016&ndash;2020.</li>
+      <li>Axios Seattle. 2025, March&nbsp;17. Seattle Metro Grows Faster Than U.S., Driven by Foreign Immigration.</li>
+      <li>City of Seattle, Office of Immigrant and Refugee Affairs. 2020. Annual Report.</li>
+    </ul>
+    </main>
+    </body>
+    </html>
+    
+</main>
+</body>
+</html>

@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Happy Places</title>
+<link rel="stylesheet" href="assets/style.css">
+</head>
+<body>
+<header>
+  <div id="shade"></div>
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="dear_data.html">Dear Data</a>
+    <a href="welcome_to_seattle.html">Welcome to Seattle</a>
+    <a href="whats_happening_in_the_town.html">What's Happening in the Town</a>
+    <a href="gray_anatomy.html">Gray Anatomy</a>
+    <a href="happy_places.html">Happy Places</a>
+  </nav>
+</header>
+
+<main>
+<h1>Finding Joy in Seattle: A Data Story of Our Class's Happy Places</h1>
+
+<p>Seattle is often associated with cloudy skies and drizzling rain, but beneath its gray canopy lies a vibrant city teeming with meaningfully personal spaces. In our GEOG 450 class, we explored these spaces by documenting locations that made us smile. Through this project, we transformed emotional memories into structured data, and eventually into visual stories. My contribution focused on analyzing our class-s collective happy places and representing them with hierarchical visualizations. What emerged was not just a map of physical locations, but a spatial narrative of joy shared by a community.</p>
+
+<p>To begin, I exported the full set of posts from our class Padlet activity, which included nearly 100 student submissions. Each post consisted of a short story about a location in Seattle where someone felt happy, often with personal details about food, companionship, nature, or comfort. From this data, I created a CSV and a hierarchical JSON file. I categorized each location into one of four types: restaurant, park, recreation, and other.</p>
+
+<p>Each location served as a subject, and I used the frequency of similar entries (measured by address prefix) as the weight or datum. I used this structured data to create two types of infographics that visually present our collective emotional geography. <p>
+
+<h2>Circle-Packing Diagram</h2>
+<figure>
+  <img src="assets/img/happy-bubble.png" alt="Circle packing of happy places"><!-- Replace path when image is ready -->
+  <figcaption>Clustered circles show which categories—and which individual locations—our class mentioned most.</figcaption>
+</figure>
+
+<p>The first infographic is a Circle Packing Diagram, which clusters locations based on their category. Larger circles represent places that were mentioned more frequently. For instance, Gas Works Park stands out in the "park" group, while Trader Joe-s is a notable entry in "restaurant". This diagram emphasizes the diversity and density of emotionally significant places across our class.</p>
+
+<h2>Treemap</h2>
+<figure>
+  <img src="assets/img/happy-treemap.png" alt="Treemap of happy places"><!-- Replace path when image is ready -->
+  <figcaption>A category-colored treemap highlights the same data with sharper quantitative precision.</figcaption>
+</figure>
+
+<p>The second visualization is a Treemap, which provides a more precise view of spatial distribution. Colors differentiate categories, and blocks vary in size depending on how often a location was mentioned. It-s a clean, information-rich way to compare location types, revealing that “parks” were the most emotionally resonant, followed by “other” public spaces like libraries and schools.</p>
+<p>Both charts were made in Python—matplotlib + circlify for Circle Packing, and plotly.express for the Treemap. I wrapped long labels for readability, added timestamps and authorship credit, and made thoughtful visual design decisions to ensure clarity and accessibility. <p>
+<h2>Reflection</h2>
+
+<p>Creating this project gave me a new lens to see Seattle—not just as a city of infrastructure, but as a network of personal emotional landmarks. I was surprised by how often green spaces and familiar stores appeared, reflecting how everyday experiences hold deep meaning.</p>
+<p>Looking back, I think I handled the data analysis and visualization well, but I could improve my time management. Some early trial-and-error with JSON structure and plotting methods slowed me down. In future projects, I plan to prototype earlier and document processing steps more clearly, especially when preparing data for visualization.<p>
+<p>Still, I-m proud of how this project transformed collective memories into meaningful visuals. It helped me see how spatial data can carry emotional weight, and how maps can tell stories far beyond directions.<p>
+
+
+<h2>References</h2>
+<ul>
+  <li>Padlet. “Happy Places - GEOG 450 Class Submissions.” Data collected May&nbsp;21 2025, accessed May&nbsp;24 2025.</li>
+  <li>Ode, Eric, and John Skewes. <em>Larry Gets Lost in Seattle.</em> Sasquatch Books, 2017.</li>
+  <li>Plotly Express &amp; Circlify documentation. https://plotly.com/python/ and https://github.com/elmotec/circlify</li>
+  <li>Seattle Times. “What Makes Seattle Special?” March 2023.</li>
+</ul>
+</main>
+</body>
+</html>
